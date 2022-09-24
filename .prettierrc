@@ -1,0 +1,11 @@
+{
+	"semi": false,
+	"useTabs": true,
+	"singleQuote": true,
+	"arrowParens": "avoid",
+	"trailingComma": "es5",
+
+	"importOrder": ["<THIRD_PARTY_MODULES>", "^../(.*)", "^./(.*)"],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}
