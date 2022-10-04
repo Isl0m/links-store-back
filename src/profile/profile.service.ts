@@ -205,10 +205,7 @@ export class ProfileService {
 		if (tags) {
 			const oldTags =  oldProfile.tags.map(item=>item.name)
 			const newTags = Boolean(tags[0].name) ? tags.map(item=>item.name):tags
-			if (!oldTags.length) {
-				await this.createTags(newTags, profileId)
-				
-			}else{
+			
 			
 			const removedTags = difference(oldTags, newTags, 'name')
 			const addedTags = difference(newTags, oldTags, 'name')
@@ -234,7 +231,7 @@ export class ProfileService {
 						tagId: tag._id,
 					})
 				})
-			}}
+			}
 		}
 
 		const isProfileChanged = oldProfile.name !== profile.name || oldProfile.profession !== profile.profession || oldProfile.surname !== profile.surname || profile.surname 
