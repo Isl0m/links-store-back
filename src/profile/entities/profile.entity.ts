@@ -1,9 +1,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { Transform } from 'class-transformer'
 import { Document, Schema as MongooseSchema } from 'mongoose'
-import { Detail } from 'src/detail/entities/detail.entity'
-import { Link } from 'src/link/entities/link.entity'
-import { Tag } from 'src/tag/entities/tag.entity'
+import { Detail } from '../../detail/entities/detail.entity'
+import { Link } from '../../link/entities/link.entity'
+import { Tag } from '../../tag/entities/tag.entity'
 
 export type ProfileDocument = Profile & Document
 

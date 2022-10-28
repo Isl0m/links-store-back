@@ -1,7 +1,7 @@
 import { IsString } from 'class-validator';
-import { CreateDetailDto } from 'src/detail/dto/create-detail.dto';
-import { CreateLinkDto } from 'src/link/dto/create-link.dto';
-import { CreateTagDto } from 'src/tag/dto/create-tag.dto';
+import { CreateDetailDto } from '../../detail/dto/create-detail.dto';
+import { CreateLinkDto } from '../../link/dto/create-link.dto';
+import { CreateTagDto } from '../../tag/dto/create-tag.dto';
 
 export class UpdateProfileDto  {
   profile:ProfileDto

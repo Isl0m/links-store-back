@@ -5,9 +5,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
 import { MongooseModule } from '@nestjs/mongoose'
 import { User, UserSchema } from 'src/user/entities/user.entity'
 import { JwtModule } from '@nestjs/jwt'
-import { getJwtConfig } from 'src/config/jwt.config'
+import { getJwtConfig } from '../../src/config/jwt.config'
 import { JwtStrategy } from './strategies/jwt.strategy'
-import { ProfileModule } from 'src/profile/profile.module'
+import { ProfileModule } from '../../src/profile/profile.module'
 
 @Module({
 	imports: [

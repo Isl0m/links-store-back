@@ -13,8 +13,8 @@ import { ProfileService } from './profile.service'
 import { CreateProfileDto } from './dto/create-profile.dto'
 import { UpdateProfileDto } from './dto/update-profile.dto'
 import { ConnectTagDto } from './dto/connect.dto'
-import { Auth } from 'src/auth/decorators/auth.decorator'
-import { User } from 'src/user/decorators/user.decorator'
+import { Auth } from '../../src/auth/decorators/auth.decorator'
+import { User } from '../../src/user/decorators/user.decorator'
 
 @Controller('profile')
 export class ProfileController {
