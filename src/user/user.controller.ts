@@ -12,7 +12,7 @@ import {
 } from '@nestjs/common'
 import { UserService } from './user.service'
 import { UpdateUserDto } from './dto/update-user.dto'
-import { Auth } from 'src/auth/decorators/auth.decorator'
+import { Auth } from '../../src/auth/decorators/auth.decorator'
 import { User } from './decorators/user.decorator'
 import { IdValidationPipe } from './pipes/id.validation.pipe'
 
