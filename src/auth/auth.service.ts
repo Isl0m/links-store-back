@@ -7,10 +7,10 @@ import { JwtService } from '@nestjs/jwt'
 import { InjectModel } from '@nestjs/mongoose'
 import { Model } from 'mongoose'
 import { compare, genSalt, hash } from 'bcryptjs'
-import { User, UserDocument } from '../../src/user/entities/user.entity'
+import { User, UserDocument } from '../user/entities/user.entity'
 import { LoginDto, RegisterDto } from './dto/auth.dto'
 import { RefreshTokenDto } from './dto/refreshToken.dto'
-import { ProfileService } from '../../src/profile/profile.service'
+import { ProfileService } from '../profile/profile.service'
 import { omit } from 'lodash'
 
 @Injectable()
