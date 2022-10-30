@@ -204,8 +204,10 @@ export class ProfileService {
 		}
 		if (tags) {
 			const oldTags =  oldProfile.tags.map(item=>item.name)
-			const newTags = Boolean(tags[0].name) ? tags.map(item=>item.name):tags
-			
+			const newTags = tags.map(item=>{
+        if(Boolean(item.name)) return item.name
+        return item
+      })
 			
 			const removedTags = difference(oldTags, newTags, 'name')
 			const addedTags = difference(newTags, oldTags, 'name')
